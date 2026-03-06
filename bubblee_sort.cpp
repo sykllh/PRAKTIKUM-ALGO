@@ -7,19 +7,21 @@ int n;
 
 void input()
 {
-        while (true)
-    cout << "Masukkan panjang array : ";
-    cin >> n;
+    while (true)
+    {
+        cout << "Masukkan panjang array : ";
+        cin >> n;
 
         if (n <=20)
         {
             break;
         }
-        else
-        {
+    else
+    {
             cout << "ERROR : Maksimal input array adalah 20/n";
-        }
-
+    }
+    }
+    
         cout << endl;
         cout << "=====================" << endl;
         cout << "Masukkan elemen Array" << endl;
@@ -66,5 +68,14 @@ void input()
             {
                 cout << a[k] << "\t";
             }
+            cout << endl;
         }
+    }
+
+    int main()
+    {
+        input();
+        BubbleSort();
+        display();
+        return 0;
     }
